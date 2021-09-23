@@ -2,6 +2,10 @@
 <body>
 <div style="color:red;font-size:50px;">
  <script language="JavaScript">
+  function okno_zamknij_Paluch()
+            {
+                window.close()
+            }
 var liczba1=prompt("liczba1=","");
 var liczba2=prompt("liczba2=","");
 var suma;
@@ -9,6 +13,7 @@ var suma;
  var b=parseFloat(liczba2);
  suma=a+b;
  document.write("suma="+a+" + "+b+" = "+suma+"<br>");
+  <input type="button" value="Zamknij okno" onclick="okno_zamknij_Paluch(' ')">
  </script>
 </div>
 </body>
