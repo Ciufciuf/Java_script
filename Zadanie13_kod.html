@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Zadanie 10-kod</title>
+<script type="text/javascript">
+function okno_zamknij_pal()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="200" rows="30">
+    <html>
+        <head>
+        <script>
+        function okno_zamknij_pal()
+        {
+        window.close()
+        }
+        </script>
+        </head>
+        <body>
+        <div style="color:navy;font-size:46px;">
+        <script language="JavaScript">
+        var a_pal=prompt("Wprowadź A = ","");
+        var b_pal=prompt("Wprowadź B = ","");
+        a_pal=parseFloat(a_pal);
+        b_pal=parseFloat(b_pal);
+        var wynik_pal=a_pal*a_pal*a_pal;
+        var wynik2_pal=3*(a_pal*a_pal*b_pal);
+        var wynik3_pal=3*(a_pal*b_pal*b_pal);
+        var wynik4_pal=b_pal*b_pal*b_pal;
+        var wynik5_pal=wynik_pal+wynik2_pal+wynik3_pal+wynik4_pal;
+        
+        document.write("Wprowadzone wartości "+a_pal+" i "+b_pal+"<br>");
+        
+        document.write("("+a_pal+" + "+b_pal+")^3 = "+a_pal+"^3 + 3*(("+a_pal+")^2)*("+b_pal+") + 3*("+a_pal+")*(("+b_pal+")^2) + "+b_pal+"^3 = "+wynik_pal+" + "+wynik2_pal+" + "+wynik3_pal+" + "+wynik4_pal+" = "+wynik5_pal);
+        
+        </script>
+        <br>
+        <br>
+        <input type="button" onclick="okno_zamknij_pal()" value="zamknij okno" />
+        </div>
+        </body>
+        </html>
+</textarea>
+
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pal()"/>
+</body>
+</html>

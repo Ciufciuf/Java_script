@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Zadanie 10-kod</title>
+<script type="text/javascript">
+function okno_zamknij_pal()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="200" rows="30">
+    <html>
+        <head>
+    
+        </head>
+        <body>
+            <div style="color:green;font-size:46px;">
+                <script language="JavaScript">
+                    function okno_zamknij_pal()
+                    {
+                        window.close()
+                    }
+                     var D1_pal=prompt("Data 1=","");
+                     var G1_pal=prompt("Godzina 1=","");
+                     var D2_pal=prompt("Data 2=","");
+                     var G2_pal=prompt("Godzina 2=","");
+                     var roznica=D2_pal*G2_pal*60*60-D1_pal*G2_pal*60*60;
+                    document.write("Różnica " + roznica + " sekund ");             
+    
+            </script>
+            <br>
+            <br>
+            <input type="button" onclick="okno_zamknij_pal()" value="zamknij okno" />
+            </div>
+    
+    </body>
+    </html>
+    
+</textarea>
+
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pal()"/>
+</body>
+</html>

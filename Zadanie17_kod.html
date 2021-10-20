@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Zadanie 10-kod</title>
+<script type="text/javascript">
+function okno_zamknij_pal()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="200" rows="30">
+    <!DOCTYPE html>
+    <head>
+    <meta charset="utf-8">
+    <script language="JavaScript">
+    function okno_zamknij_radchenko()
+   {
+   window.close()
+   }
+    </script>
+    </head>
+   <body>
+    <div style="color:green;font-size:46px;">
+    <script language="JavaScript">
+    var a=parseFloat(prompt("a=",""));
+    var b=parseFloat(prompt("b=",""));
+    function suma_pal(a, b) {
+    return a + b;
+    }
+    function odejmowanie_pal(a, b) {
+    return a - b;
+    }
+    function mnozenie_pal(a, b) {
+    return a * b;
+    }
+    function do_potegi_pal(a, b) {
+    return Math.pow(a,b);
+    }
+    function reszta_z_dzielenia_pal(a, b) {
+    return a % b;
+    }
+    document.write("suma="+suma_pal(a,b)+"<br>"+"różnica="+odejmowanie_pal(a,b)+"<br>"+"mnożenie="+mnozenie_pal(a,b)+"<br>"+"potęgowanie a przez b="+do_potegi_pal(a,b)+"<br>"+"reszta z dzielenia="+reszta_z_dzielenia_pal(a,b)+"<br>");
+   </script>
+   <br>
+   <br>
+   <input type="button" onclick="okno_zamknij_pal()" value="zamknij okno" />
+   </div>
+   </body>
+   </html>
+</textarea>
+
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pal()"/>
+</body>
+</html>

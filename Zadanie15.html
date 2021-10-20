@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function okno_zamknij_pal()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<div style="color:green;font-size:46px;">
+<script language="JavaScript">
+var in_x1_pal=prompt("Wprowadź x1 = ","");
+var in_x2_pal=prompt("Wprowadź x2 = ","");
+var x1_pal=parseFloat(in_x1_pal);
+var x2_pal=parseFloat(in_x2_pal);
+
+var y_pal=3 * Math.pow(x1_pal, (4/(4+2)));
+var y2_pal=2 * Math.cos(x1_pal * Math.PI / 180)+ 2 * Math.sin(x1_pal * Math.PI/180);
+var z_pal=Math.cbrt(Math.pow(x1_pal,5)+(2 * Math.pow(x2_pal,4)));
+var z1_pal=Math.abs(x1_pal-x2_pal);
+var y3_pal=z_pal*z1_pal;
+
+document.write("Wprowadzone wartości :"+x1_pal+" stopni i "+x2_pal+" stopni"+"<br>");
+
+document.write("x1 = "+x1_pal+"<br>"+"x2 = "+x2_pal+"<br>"+"y = "+y_pal.toFixed(2)+"<br>"+"y2 = "+y2_pal.toFixed(4)+"<br>"+"y3 = "+y3_pal.toFixed(4));
+
+</script>
+<br>
+<br>
+<input type="button" onclick="okno_zamknij_pal()" value="zamknij okno" />
+</div>
+</body>
+</html>

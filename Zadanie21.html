@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Zadanie 21</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function dlugosc_pal(d_pal,x_pal)
+{
+ d_pal=parseFloat(d_pal);
+ x_pal=parseFloat(x_pal);
+ drabina_pal=Math.sqrt(d_pal*d_+x_pal*x_pal);
+ document.getElementsByName('drab')[0].value=drabina_pal.toFixed(2);
+ alert("Drabina="+drabina_pal.toFixed(2)+" m");
+ drabina.innerHTML="Drabina="+drabina_pal.toFixed(2)+" m"+"<br>";
+}
+function alfa_rad(d_palx_pal)
+{
+ d_pal=parseFloat(d_pal);
+ x_pal=parseFloat(x_pal);
+ radian_pal=Math.atan2(d_pal,x_pal);
+ stopnie_pal=radian_pal*(180/Math.PI);
+ document.getElementsByName('kat')[0].value=stopnie_pal.toFixed(2);
+ alert("Alfa="+stopnie_pal.toFixed(2)+" stopni");
+ alfa.innerHTML="Alfa="+stopnie_pal.toFixed(2)+" stopni";
+}
+function okno_zamknij_pal()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="dlugosc_pal(this.d_dana_pal.value,this.x_dana_pal.value);
+alfa_pal(this.d_dana_pal.value,this.x_dana_pal.value);return false">
+Podaj d=
+<input size="6" name="d_dana_pal">
+Podaj x=
+<input size="6" name="x_dana_pal">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="drab">
+Alfa=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="drabina"></tr>
+<tr id="alfa"></tr>
+<br>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pal()"/>
+</table>
+</body>
+</html>

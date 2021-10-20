@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function pole_pal(a_pal,b_pal)
+{
+ a_pal=parseFloat(a_pal);
+ b_pal=parseFloat(b_pal);
+ pole_wynik_pal=a_pal*b_pal;
+ document.getElementsByName('pole')[0].value=pole_wynik_pal.toFixed(2);
+ alert("Pc="+pole_wynik_pal.toFixed(2)+" cm^2");
+ wprowadz_pole_pal.innerHTML="Pc="+pole_wynik_pal.toFixed(2)+" cm^2"+"<br>";
+}
+function obwod_pal(a_pal,b_pal)
+{
+ a_pal=parseFloat(a_pal);
+ b_pal=parseFloat(b_pal);
+ obwod_pal=2*a_pal+2*b_pal;
+ document.getElementsByName('obw')[0].value=obwod_pal.toFixed(2);
+ alert("Obwod="+obwod_pal.toFixed(2)+" cm");
+ wprowadz_obw_pal.innerHTML="Obwód="+obwod_pal.toFixed(2)+" cm";
+}
+function okno_zamknij_pal()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Obliczanie pola oraz obwodu prostokąta
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="pole_pal(this.a_dana_pal.value,this.b_dana_pal.value);
+obwod_pal(this.a_dana_pal.value,this.b_dana_pal.value);return false">
+Podaj a=
+<input size="6" name="a_dana_pal">
+Podaj b=
+<input size="6" name="b_dana_pal">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+<input size="6" name="pole">
+Obwód=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="wprowadz_pole_pal"></tr>
+<tr id="wprowadz_obw_pal"></tr>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pal()"/>
+</table>
+</body>
+</html>
