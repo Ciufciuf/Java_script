@@ -12,27 +12,40 @@ window.close()
 <body>
 <textarea cols="200" rows="30">
     <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <div style="color:black;font-size:58px;">
-            <script language="JavaScript"/>
-            for(i=1;i<=62;i++){
-                document.write("<font style='font-size: 20px; color: black;'>*</font>");
-            }
-            for(i=1;i<=29;i++){
-            document.write("<br><font style='font-size: 20px; color: black; float: left; margin-left: 0px'>*</font>");
-            document.write("<font style='font-size: 20px; color: black; float: right; margin-right: 2060px'>*</font>");
-            }
-            for(i=1;i<=62;i++){
-            document.write("<font style='font-size: 20px; color: black;'>*</font>");
-            }
-            </script>       
-        </div>
-    </head>  
-</html>
+    <html>
+        <head>
+        <meta charset="UTF-8">
+            <meta name="author" content="Oscar Wiliwis">
+        </head>
+            <body>
+                <div style="color:black;font-size:50px;">
+                    <script language="JavaScript">
+                        x=10%4+5;
+                        y=10%6+20;
+                        for(i = 1; i<=y; i++)
+                        {
+                        document.write("*");
+                        }
+                        for(i = 1; i<=x; i++)
+                        {
+                        document.write("<br>*");
+                        for(j = 1; j<=x; j++)
+                        {
+                        document.write("<span style=\"margin-right:" +x*9.5+";\">&nbsp</span>");
+                        }
+                        document.write("*");
+                        }
+                        document.write("<br>");
+                        for(i = 1; i<=y; i++)
+                        {
+                        document.write("*");
+                        }
+                        document.write("&nbsp");
+                    </script>
+                </div>
+            </body>
+    </html>
 </textarea>
-
 <br>
 <input type="button" value="zamknij okno" onclick="okno_zamknij_pal()"/>
 </body>

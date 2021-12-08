@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Zadanie 10-kod</title>
+<script type="text/javascript">
+function okno_zamknij_pal()
+{
+window.close()
+}
+</script>
+</head>
+
+<body>
+<textarea cols="200" rows="30">
+    
+    <!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        </body>
+        <script language="JavaScript">
+            var dzialanie;
+            for(i=0;i<40;i++){
+            if(i%5==0){
+             confirm("Kliknij w ok");
+            }
+    dzialanie= i*i+i+41;
+    document.write("i ="+i+"     W("+i+") = "+dzialanie+"<br>");
+}
+        </script>
+    </body>
+</html>
+</textarea>
+
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pal()"/>
+</body>
+</html>
